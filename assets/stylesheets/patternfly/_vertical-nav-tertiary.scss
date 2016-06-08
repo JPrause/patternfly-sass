@@ -201,8 +201,8 @@ $nav-pf-menu-transition-period:                                     0.1s;
         .pficon {
           color: $nav-pf-vertical-icon-color;
           float: left;
-          font-size: ($font-size-base + 2);
-          line-height: 30px;
+          font-size: ($font-size-base + 8);
+          line-height: 26px;
           margin-right: 10px;
           text-align: center;
           width: $nav-pf-vertical-icon-width;
@@ -619,14 +619,18 @@ $nav-pf-menu-transition-period:                                     0.1s;
     font-family: $icon-font-name-fa;
     font-size: inherit;
     -webkit-font-smoothing: antialiased;
-    opacity: 0.5;
+    opacity: 0;
     pointer-events: none;
     &:before {
-      content: '\f190';
+      content: '\f08d';
     }
     &.collapsed {
       &:before {
-        content: '\f18e';
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(deg);
+        content: '\f08d';
+        display: inline-block;
       }
     }
     .secondary-nav-item-pf.active & {
@@ -636,6 +640,9 @@ $nav-pf-menu-transition-period:                                     0.1s;
     .show-mobile-nav & {
       opacity: 1;
       pointer-events: all;
+      &:before {
+        content: '\f190';
+      }
     }
   }
   .collapsed-tertiary-nav-pf & {
@@ -802,14 +809,18 @@ $nav-pf-menu-transition-period:                                     0.1s;
     font-family: $icon-font-name-fa;
     font-size: inherit;
     -webkit-font-smoothing: antialiased;
-    opacity: 0.5;
+    opacity: 0;
     pointer-events: none;
     &:before {
-      content: '\f190';
+      content: '\f08d';
     }
     &.collapsed {
       &:before {
-        content: '\f18e';
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(deg);
+        content: '\f08d';
+        display: inline-block;
       }
     }
     .tertiary-nav-item-pf.active & {
@@ -819,6 +830,9 @@ $nav-pf-menu-transition-period:                                     0.1s;
     .show-mobile-nav & {
       opacity: 1;
       pointer-events: all;
+      &:before {
+        content: '\f190';
+      }
     }
   }
 }
