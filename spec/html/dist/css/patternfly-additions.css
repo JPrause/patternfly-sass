@@ -5915,8 +5915,8 @@ table.datatable th:active {
 .nav-pf-vertical.nav-pf-vertical-with-tertiary-nav > .list-group > .list-group-item > a .pficon {
   color: #72767b;
   float: left;
-  font-size: 14px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 26px;
   margin-right: 10px;
   text-align: center;
   width: 24px;
@@ -6289,14 +6289,18 @@ table.datatable th:active {
   font-family: "FontAwesome";
   font-size: inherit;
   -webkit-font-smoothing: antialiased;
-  opacity: 0.5;
+  opacity: 0;
   pointer-events: none;
 }
 .nav-pf-secondary-nav .secondary-collapse-toggle-pf:before {
-  content: '\f190';
+  content: '\f08d';
 }
 .nav-pf-secondary-nav .secondary-collapse-toggle-pf.collapsed:before {
-  content: '\f18e';
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(deg);
+  content: '\f08d';
+  display: inline-block;
 }
 .secondary-nav-item-pf.active .nav-pf-secondary-nav .secondary-collapse-toggle-pf {
   opacity: 1;
@@ -6305,6 +6309,9 @@ table.datatable th:active {
 .show-mobile-nav .nav-pf-secondary-nav .secondary-collapse-toggle-pf {
   opacity: 1;
   pointer-events: all;
+}
+.show-mobile-nav .nav-pf-secondary-nav .secondary-collapse-toggle-pf:before {
+  content: '\f190';
 }
 .collapsed-tertiary-nav-pf .nav-pf-secondary-nav {
   width: 200px;
@@ -6465,14 +6472,18 @@ table.datatable th:active {
   font-family: "FontAwesome";
   font-size: inherit;
   -webkit-font-smoothing: antialiased;
-  opacity: 0.5;
+  opacity: 0;
   pointer-events: none;
 }
 .nav-pf-tertiary-nav .tertiary-collapse-toggle-pf:before {
-  content: '\f190';
+  content: '\f08d';
 }
 .nav-pf-tertiary-nav .tertiary-collapse-toggle-pf.collapsed:before {
-  content: '\f18e';
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(deg);
+  content: '\f08d';
+  display: inline-block;
 }
 .tertiary-nav-item-pf.active .nav-pf-tertiary-nav .tertiary-collapse-toggle-pf {
   opacity: 1;
@@ -6481,6 +6492,9 @@ table.datatable th:active {
 .show-mobile-nav .nav-pf-tertiary-nav .tertiary-collapse-toggle-pf {
   opacity: 1;
   pointer-events: all;
+}
+.show-mobile-nav .nav-pf-tertiary-nav .tertiary-collapse-toggle-pf:before {
+  content: '\f190';
 }
 .force-hide-secondary-nav-pf .nav-pf-secondary-nav {
   display: none !important;
