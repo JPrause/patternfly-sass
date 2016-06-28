@@ -28,7 +28,7 @@ class Converter
   VAR
 
   def initialize(options={})
-    @repository  = options.fetch(:repository, 'patternfly/patternfly')
+    @repository  = options.fetch(:repository, 'jeff-phillips-18/patternfly')
     @branch      = options.fetch(:branch, 'master')
     @destination = options.fetch(:destination, 'assets')
     @cache_path  = options.fetch(:cache_path, 'tmp')
